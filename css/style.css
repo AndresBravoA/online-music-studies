@@ -20,16 +20,15 @@ header{
     align-items: center;
 }
 
-/*
-header nav{
-    align-self: end;
-} 
-*/
+header img{
+    width: 20%;
+    height: 20%;
+}
 
 header h1{
     font-size: 40px;
     font-weight: 400;
-    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: bold;
     color: white;
 }
