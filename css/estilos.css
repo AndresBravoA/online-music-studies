@@ -6,6 +6,14 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .fixed img {
+    width: 50px;
+    height: 54px; }
+
 header {
   background-color: black;
   position: sticky;
@@ -31,6 +39,159 @@ header {
         text-decoration: none;
         color: white;
         transition: 1s; }
+        header nav ul li a:hover {
+          font-size: 150%;
+          font-weight: bold; }
+
+main .hero {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.452)), url("../img/pexels-wendy-wei-1190297.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .hero h2 {
+    font-size: 40px;
+    border: 2px solid white;
+    padding: 10px; }
+  main .hero p {
+    margin-bottom: 20px; }
+  main .hero a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+    transition: 1s; }
+    main .hero a:hover {
+      padding: 10px 15px; }
+
+main .bienvenidos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+  main .bienvenidos div {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .bienvenidos div h2 {
+      text-align: left;
+      font-style: normal; }
+  main .bienvenidos img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; }
+
+main .productos h2 {
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  margin: 5px;
+  text-align: center;
+  padding: 5px; }
+
+main .productos .productos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2px; }
+  main .productos .productos-contenedor div {
+    border: 1px solid gray;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    transition: 1s; }
+    main .productos .productos-contenedor div:hover {
+      transform: scale(1.05); }
+    main .productos .productos-contenedor div img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; }
+    main .productos .productos-contenedor div h3 {
+      margin-bottom: 10px; }
+    main .productos .productos-contenedor div a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: black;
+      padding: 5px 10px; }
+
+main .galeria h2 {
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 5px; }
+
+main .galeria .grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 250px 250px 250px;
+  grid-auto-rows: 250px;
+  gap: 5px; }
+  main .galeria .grid-galeria .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px; }
+  footer div p {
+    font-weight: bold;
+    font-size: 25px; }
+  footer div img {
+    width: 100px;
+    height: 100px; }
+
+@media screen and (max-width: 950px) {
+  .grid-galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 220px; }
+  .img-9 {
+    grid-column: span 2; } }
+
+@media screen and (max-width: 710px) {
+  footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column; }
+  .hero h2 {
+    font-size: 30px;
+    padding: 8px; } }
+
+@media screen and (max-width: 550px) {
+  .bienvenidos {
+    flex-direction: column; }
+  .hero h2 {
+    font-size: 25px;
+    padding: 7px; }
+  .bienvenidos div {
+    width: 80%;
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px; }
+  .img-9 {
+    grid-column: span 1; } }
 
 @media screen and (max-width: 460px) {
   header nav ul {
