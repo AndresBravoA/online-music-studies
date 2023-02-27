@@ -1,37 +1,127 @@
 header{
     background-color: black;
+    height: 90px;
+    width: 100%;
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    img{
-        width: 20%;
-        height: 20%;
+
+
+    .logo{
+        height: 70px;
+        width: auto;
+        padding: 0px 0px 0px 10px;
     }
-    h1{
-        font-size: 40px;
-        font-weight: 400;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: bold;
-        color: white;
+    .checkbox{
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: center;
+        right: 3%;
+        cursor: pointer;
+        opacity: 0;
+        display: none;
     }
-    nav{
-        ul{
+    .interface-burger{
+        display: none;
+    }
+    .interface-close{
+        display: none;
+    }
+    .interface-buttons{
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: center;
+        right: 3%;
+        cursor: pointer;
+        pointer-events: none;
+        display: none;
+    }
+    .navbar{
+        align-items: center;
+        .menu-navbar{
             list-style-type:none;
             display: flex;
             li{
-                margin: 10px 15px 15px 10px;
+                align-items: center;
                 a{
+                    align-items: center;
                     text-decoration: none;
-                    color: white;
-                    transition: 1s;
+                    color: rgb(175, 27, 63);
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 15px;
                     &:hover{
-                        font-size: 150%;
-                        font-weight: bold;
+                        font-size: 25px;
+                        font-weight: bold;;
+                        background-color: rgb(209, 204, 220);
                     }
                 }
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+/*
+    h1{
+        padding: 0px;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: bold;
+        color: black;
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header{
+
+    position: relative;
+    top: 0;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+
+        }
+        .menu-navbar{
+
+            li{
+
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                transition: 1s;
+                &:hover{
+                    font-size: 150%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+*/

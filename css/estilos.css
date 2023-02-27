@@ -1,48 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
-
-.fixed {
-  position: fixed;
-  right: 50px;
-  bottom: 50px; }
-  .fixed img {
-    width: 50px;
-    height: 54px; }
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white; }
 
 header {
   background-color: black;
+  height: 90px;
+  width: 100%;
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
-  header img {
-    width: 20%;
-    height: 20%; }
-  header h1 {
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: bold;
-    color: white; }
-  header nav ul {
-    list-style-type: none;
-    display: flex; }
-    header nav ul li {
-      margin: 10px 15px 15px 10px; }
-      header nav ul li a {
-        text-decoration: none;
-        color: white;
-        transition: 1s; }
-        header nav ul li a:hover {
-          font-size: 150%;
-          font-weight: bold; }
+  header .logo {
+    height: 70px;
+    width: auto;
+    padding: 0px 0px 0px 10px; }
+  header .checkbox {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: center;
+    right: 3%;
+    cursor: pointer;
+    opacity: 0;
+    display: none; }
+  header .interface-burger {
+    display: none; }
+  header .interface-close {
+    display: none; }
+  header .interface-buttons {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: center;
+    right: 3%;
+    cursor: pointer;
+    pointer-events: none;
+    display: none; }
+  header .navbar {
+    align-items: center; }
+    header .navbar .menu-navbar {
+      list-style-type: none;
+      display: flex; }
+      header .navbar .menu-navbar li {
+        align-items: center; }
+        header .navbar .menu-navbar li a {
+          align-items: center;
+          text-decoration: none;
+          color: #af1b3f;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 15px; }
+          header .navbar .menu-navbar li a:hover {
+            font-size: 25px;
+            font-weight: bold;
+            background-color: #d1ccdc; }
 
+/*
+    h1{
+        padding: 0px;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: bold;
+        color: black;
+    }
+*/
+/*
+header{
+
+    position: relative;
+    top: 0;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+
+        }
+        .menu-navbar{
+
+            li{
+
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                transition: 1s;
+                &:hover{
+                    font-size: 150%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+*/
 main .hero {
   text-align: center;
   color: white;
@@ -57,12 +117,13 @@ main .hero {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main .hero h2 {
+  main .hero h1 {
     font-size: 40px;
     border: 2px solid white;
     padding: 10px; }
   main .hero p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 50%; }
   main .hero a {
     text-decoration: none;
     color: white;
@@ -99,7 +160,8 @@ main .productos h2 {
   background-color: black;
   margin: 5px;
   text-align: center;
-  padding: 5px; }
+  padding: 5px;
+  width: 50%; }
 
 main .productos .productos-contenedor {
   display: flex;
@@ -156,6 +218,14 @@ footer {
   footer div img {
     width: 100px;
     height: 100px; }
+
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .fixed img {
+    width: 50px;
+    height: 54px; }
 
 @media screen and (max-width: 950px) {
   .grid-galeria {
