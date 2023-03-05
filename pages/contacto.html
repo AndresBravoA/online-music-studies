@@ -1,81 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Online Music Studies</title>
-</head>
-<body>
-    <header>
-        <img src="../img/Propuesgta 1 de isologo.png" alt="">
-        <h1>Online Music Studies</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <Section>
-            <h1>Registrate!</h1>
-            <form action="" method="" enctype="">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="musica, canto, clases de canto, como cantar, aprender a cantar, clases de armonia, escuela de musica, canto en linea">
+        <meta name="description" content="Clases online en vivo de Música, Canto Principiantes a Avanzado, Armonía, Vocal Coaching, Composición Musical y Poesía. Nuestros profesores tienen mas de 10 años de experiencia. Explora tu talento musical ahora!">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Online Music Studies | Explora Tu Talento Musical">
+        <meta property="og:url" content="https://www.onlinemusicstudies.com">
+        <!-- <meta property="og-image" content="link de la imagen que aun no tengo hasta subir al servidor"> -->
+        <meta property="og:description" content="Clases online en vivo de Música, Canto Principiantes a Avanzado, Armonía, Vocal Coaching, Composición Musical y Poesía. Nuestros profesores tienen mas de 10 años de experiencia. Explora tu talento musical ahora!">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="shortcut icon" href="../img/Logo for Favicon.png" type="image/x-icon">
+        <title>Online Music Studies - Explora Tu Talento Musical</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container-header">
+                <img class="logo" src="../img/OnlineMusicStudiesLogo.png" alt="">
+                <input class="checkbox" type="checkbox">
+                <img class="interface-burger interface-buttons"  src="./img/Interface/menu-hamburguesa.png" alt="">
+                <img class="interface-close interface-buttons" src="./img/Interface/cruz.png" alt="">
+                <Nav class="navbar">
+                    <ul class="menu-navbar">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/clases.html">Clases</a></li>
+                        <li><a href="../pages/maestros.html">Maestros</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html ">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <Section>
+                <h1>Registrate!</h1>
+                <form action="" method="" enctype="">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="password" name="apellido" id="apellido">
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <h2>Genero:</h2>
+                        <label for="Masculino">Masculino</label>
+                        <input type="radio" name="genero">
+                        <label for="Femenino">Femenino</label>
+                        <input type="radio" name="genero">
+                        <label for="Otro">Otro</label>
+                        <input type="radio" name="genero">
+                    </div>
+                    <div>
+                        <h2>Sekecciona tu pais</h2>
+                        <select name="" id="">
+                            <option value="Mexico">Mexico</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h2>Dejanos tu mensaje</h2>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar Formulario">
+                        <input type="reset" value="Limpiar Formulario">
+                    </div>
+                </form>
+            </Section>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="box-footer">
+                    <div class="logo">
+                        <img src="../img/OnlineMusicStudiesLogo.png">
+                    </div>
+                    <div class="short-description">
+                    <p>Somos una Escuela 100% Mexicana. Comprometida con el aprendizaje de nuestros alumnos y con pasión por la enseñanza. </p>
+                    </div>
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="password" name="apellido" id="apellido">
+                <div class="box-footer">
+                    <h3>Clases Online</h3>
+                    <a href="">Canto Profesional</a>
+                    <a href="">Guitarra Electrica</a>
+                    <a href="">Armonia</a>
+                    <a href="">Poesía</a>
                 </div>
-                <div>
-                    <label for="contrasena">Contraseña</label>
-                    <input type="text" name="contrasena" id="contrasena">
+                <div class="box-footer">
+                    <h3>Online Music Studies</h3>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../pages/clases.html">Clases</a>
+                    <a href="../pages/maestros.html">Maestros</a>
+                    <a href="../pages/nosotros.html">Nosotros</a>
+                    <a href="../pages/contacto.html">Contacto</a>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                <div class="box-footer">
+                    <h3>Redes Sociales</h3>
+                    <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook">Facebook</a>
+                    <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram">Instagram</a>
                 </div>
-                <div>
-                    <h2>Genero:</h2>
-                    <label for="Masculino">Masculino</label>
-                    <input type="radio" name="genero">
-                    <label for="Femenino">Femenino</label>
-                    <input type="radio" name="genero">
-                    <label for="Otro">Otro</label>
-                    <input type="radio" name="genero">
-                </div>
-                <div>
-                    <h2>Sekecciona tu pais</h2>
-                    <select name="" id="">
-                        <option value="Mexico">Mexico</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Chile">Chile</option>
-                    </select>
-                </div>
-                <div>
-                    <h2>Dejanos tu mensaje</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-                </div>
-            </form>
-        </Section>
-    </main>
-    <footer id="pie">
-        <div>
-            <p>Redes Sociales</p>
-            <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/gorjeo.png" alt="Logo Twitter"></a>
-        </div>
-    </footer>
-</body>
+            </div>
+            <div class="box-copyright">
+                <hr>
+                <p> Todos los derechos reservados ® 2023
+                <b>Online Music Studios</b></p>
+            </div>
+        </footer>
+    </body>
 </html>

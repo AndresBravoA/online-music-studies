@@ -1,74 +1,76 @@
 header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     height: 90px;
     width: 100%;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-    .logo{
-        height: 70px;
-        width: auto;
-        padding: 0px 0px 0px 10px;
-    }
-    .checkbox{
-        height: 24px;
-        width: 24px;
-        position: absolute;
-        top: center;
-        right: 3%;
-        cursor: pointer;
-        opacity: 0;
-        display: none;
-    }
-    .interface-burger{
-        display: none;
-    }
-    .interface-close{
-        display: none;
-    }
-    .interface-buttons{
-        height: 24px;
-        width: 24px;
-        position: absolute;
-        top: center;
-        right: 3%;
-        cursor: pointer;
-        pointer-events: none;
-        display: none;
-    }
-    .navbar{
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1200px;
         align-items: center;
-        .menu-navbar{
-            list-style-type:none;
-            display: flex;
-            li{
-                align-items: center;
-                a{
+    
+        .logo{
+            height: 70px;
+            width: auto;
+            padding: 0px 0px 0px 10px;
+        }
+        .checkbox{
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            top: center;
+            right: 3%;
+            cursor: pointer;
+            opacity: 0;
+            display: none;
+        }
+        .interface-burger{
+            display: none;
+        }
+        .interface-close{
+            display: none;
+        }
+        .interface-buttons{
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            top: center;
+            right: 3%;
+            cursor: pointer;
+            pointer-events: none;
+            display: none;
+        }
+        .navbar{
+            align-items: center;
+            .menu-navbar{
+                list-style-type:none;
+                display: flex;
+                li{
                     align-items: center;
-                    text-decoration: none;
-                    color: rgb(175, 27, 63);
-                    font-size: 20px;
-                    font-weight: bold;
-                    padding: 15px;
-                    &:hover{
-                        font-size: 25px;
-                        font-weight: bold;;
-                        background-color: rgb(209, 204, 220);
+                    a{
+                        align-items: center;
+                        text-decoration: none;
+                        color: rgba(121,47,97,255);
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 15px;
+                        &:hover{
+                            font-size: 25px;
+                            font-weight: bold;;
+                            background-color: rgb(209, 204, 220);
+                        }
                     }
                 }
             }
         }
     }
 }
-
-
-
-
-
 
 
 
