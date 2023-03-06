@@ -61,6 +61,7 @@ main{
             h2{
                 text-align: left;
                 font-style: normal;
+                color: rgba(121,47,97,255);
             }
         }
         img{
@@ -105,7 +106,7 @@ main{
                 }
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: rgba(121,47,97,255);
                     font-weight: bold;
                     background-color: black;
                     padding: 5px 10px;
@@ -141,13 +142,12 @@ main{
 /* Main clases.css (Servicios) */
 
 main{
-    .wrapper{
+    .clases-title{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background: black;
+
         h1{
             font-size: 3em;
             margin: 25px 0px;
@@ -157,11 +157,20 @@ main{
         }
         p{
             text-align: center;
-            max-width: 1200px;
+            max-width: 1000px;
+            font-weight: bold;
         }
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: black;
         .content-box{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
             width: auto;
             margin-top: 30px;
@@ -174,20 +183,22 @@ main{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                background-color: #fff;
+                background-color: white;
                 margin: 10px 4px;
-                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-                &:hover{
-                    background: linear-gradient(45deg);
+                box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.2);
+                img{
+                    height: 40px;
+                    width: auto;
+                    color: rgba(121,47,97,255)
                 }
                 h2{
                     margin-bottom: 15px;
-                    font-weight: 400;
+                    font-weight: bold;
                     color: rgba(121,47,97,255);
                     text-align: center;
                 }
                 p{
-                    text-align: center;
+                    text-align: left;
                 }
             }
         }
