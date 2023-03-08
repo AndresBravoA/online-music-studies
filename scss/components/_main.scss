@@ -17,12 +17,12 @@ main{
         justify-content: center;
         align-items: center;
         .hero-header{
-            padding: 0px 0px 0px 20px;
             display: flex;
             flex-direction: column;
             height: 400px;
             width: 1200px;
             justify-content: center;
+            padding: 0px 0px 0px 20px;
             h1{
                 font-size: 40px;
                 width: fit-content;
@@ -72,6 +72,11 @@ main{
     }
 
     .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         h2{
             font-size: 35px;
             color: white;
@@ -79,12 +84,13 @@ main{
             margin: 5px;
             text-align: center;
             padding: 5px;
-            width: 50%;
         }
         .productos-contenedor{
+            width: 1200px;
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             margin: 2px;
             div{
                 border: 1px solid gray;

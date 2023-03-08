@@ -125,12 +125,12 @@ main .hero {
   justify-content: center;
   align-items: center; }
   main .hero .hero-header {
-    padding: 0px 0px 0px 20px;
     display: flex;
     flex-direction: column;
     height: 400px;
     width: 1200px;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0px 0px 0px 20px; }
     main .hero .hero-header h1 {
       font-size: 40px;
       width: fit-content; }
@@ -170,41 +170,47 @@ main .bienvenidos {
     height: 350px;
     object-fit: cover; }
 
-main .productos h2 {
-  font-size: 35px;
-  color: white;
-  background-color: black;
-  margin: 5px;
-  text-align: center;
-  padding: 5px;
-  width: 50%; }
-
-main .productos .productos-contenedor {
+main .productos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 2px; }
-  main .productos .productos-contenedor div {
-    border: 1px solid gray;
-    width: 250px;
-    height: 350px;
-    margin: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  main .productos h2 {
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    margin: 5px;
     text-align: center;
-    transition: 1s; }
-    main .productos .productos-contenedor div:hover {
-      transform: scale(1.05); }
-    main .productos .productos-contenedor div img {
+    padding: 5px; }
+  main .productos .productos-contenedor {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2px; }
+    main .productos .productos-contenedor div {
+      border: 1px solid gray;
       width: 250px;
-      height: 250px;
-      object-fit: cover; }
-    main .productos .productos-contenedor div h3 {
-      margin-bottom: 10px; }
-    main .productos .productos-contenedor div a {
-      text-decoration: none;
-      color: #792f61;
-      font-weight: bold;
-      background-color: black;
-      padding: 5px 10px; }
+      height: 350px;
+      margin: 10px;
+      text-align: center;
+      transition: 1s; }
+      main .productos .productos-contenedor div:hover {
+        transform: scale(1.05); }
+      main .productos .productos-contenedor div img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover; }
+      main .productos .productos-contenedor div h3 {
+        margin-bottom: 10px; }
+      main .productos .productos-contenedor div a {
+        text-decoration: none;
+        color: #792f61;
+        font-weight: bold;
+        background-color: black;
+        padding: 5px 10px; }
 
 main .galeria h2 {
   font-size: 35px;
